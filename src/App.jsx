@@ -7,8 +7,7 @@ function App() {
 
   const [champion, setChampion] = useState('');
 
-  const { champions } = useChampions();
-  const championsSelectList = champions.map(champion => champion = { value: champion.champion, label: champion.champion })
+  const {championsList} = useChampions();
 
   const handleInputChange = (event) => { 
     setChampion(event.value)
@@ -20,7 +19,7 @@ function App() {
         IPAV'S TEEMO BUILDS
       </header>
       <main className="App-main">
-        <SearchBar onChange={handleInputChange} championsList={championsSelectList}/>
+        <SearchBar onChange={handleInputChange} championsList={championsList}/>
       </main>
     </div>
   )
