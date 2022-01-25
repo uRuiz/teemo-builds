@@ -5,8 +5,7 @@ export const ChampionsContext = createContext();
 
 const ChampionsContextProvider = ({ children }) => {
 
-  const [champions] = useState(data);
-  const championsList = champions.map(champion => champion = { value: champion.champion, label: champion.champion })
+  const championsList = data.map(champion => champion = { value: champion.champion, label: champion.champion })
 
   return (
     <ChampionsContext.Provider value={{championsList}}>

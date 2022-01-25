@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { SearchBar } from './components/SearchBar/SearchBar'
-import './App.css'
 import { useChampions } from './hooks/useChampions';
+import './App.css'
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
         IPAV'S TEEMO BUILDS
       </header>
       <main className="App-main">
-        <SearchBar onChange={handleInputChange} championsList={championsList}/>
+        <SearchBar onChange={handleInputChange} championsList={championsList} />
       </main>
     </div>
   )
